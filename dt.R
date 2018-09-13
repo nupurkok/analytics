@@ -53,3 +53,16 @@ aggregate(cbind(marks1, marks2) ~ batch + gender, data=df, FUN=mean)
 aggregate(cbind(marks1, marks2) ~ gender + batch, data=df, FUN=mean)
 
 aggregate(cbind(marks1, marks2) ~ gender + batch, data=df, FUN=max)
+
+
+df
+write.csv(df, './data/bits.csv') #exporting data
+
+df2=read.csv('./data/bits.csv') #importing data
+df2 #after importing an extra column comes up
+
+df2 = df2[,-1] #extra column removed
+df2 
+
+library(dplyr)
+library(amap)

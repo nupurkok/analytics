@@ -3,8 +3,7 @@
 
 mtcars
 # using subset function 
-newdata <- subset(mtcars, mpg >=20 & mpg < 30, 
-                  select=c(mpg, disp))
+newdata <- subset(mtcars, mpg >=20 & mpg < 30,select=c(mpg, disp))
 newdata
 #we select cars with mpg >= 20   and < 10 
 #we keep variables mpg and disp
